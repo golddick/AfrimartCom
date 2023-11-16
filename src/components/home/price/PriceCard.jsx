@@ -88,7 +88,7 @@ const PriceCard = () => {
                   },
                   // when window width is >= 480px
                   480: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 30
                   },
                   // when window width is >= 640px

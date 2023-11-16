@@ -94,7 +94,7 @@ height: 80px;
 
 @media screen and (max-width: 760px){
   .featured_box{
-    width: 320px !important;
+    width: 100% !important;
     height: 100%;
     /* background-color: aqua; */
   }

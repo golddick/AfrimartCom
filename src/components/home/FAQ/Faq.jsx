@@ -23,7 +23,7 @@ function Faq() {
     }
   return (
     <div className='Faq padding'>
-        <Heading title='Frequently Asked Questions' subtitle='' />
+       <div className="header"> <Heading title='Frequently Asked Questions' subtitle='' /></div>
         <div className="faqBody">
             <div className="faqText">
                 <div className="faq_Que">
