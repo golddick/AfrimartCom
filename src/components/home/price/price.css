@@ -1,0 +1,366 @@
+.price{
+  margin-top: 50px;
+}
+
+.priceCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 50px;
+  padding: 20px;
+  /* background-color: gold; */
+  justify-content: center;
+ 
+
+}
+
+  .pricingSwitch{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(198, 162, 96, 0.297);
+     /* border: 2px solid orange; */
+    height: 70px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 100px;
+  }
+
+  .tab{
+display: flex;
+justify-content: center;
+width: 100%;
+background-color: orange;
+color: white;
+border-radius: 100px;
+padding: 10px;
+font-size: 14px;
+  }
+
+  .activeTab{
+    display: flex;
+width: 100%;
+background-color: #fff;
+justify-content: center;
+color: orange;
+border-radius: 100px;
+padding: 10px;
+border: 2px solid orange;
+font-size: 14px;
+  }
+
+.pricingContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  /* background-color: aqua; */
+
+}
+
+.cardHeader{
+  color: #5e5c5c;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.048px;
+  text-align: center;
+
+}
+
+.pricingCards{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+  /* background-color: aqua; */
+
+}
+
+.p_cardRow{
+  /* display: grid;
+  grid-template-columns: 2fr 2fr 2fr ; */
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* gap: 50px; */
+  
+}
+
+/* .mySwiper{
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.pCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  border: 2px solid orange ;
+  padding: 20px;
+  /* padding-top: 20px; */
+  /* background-color: darkblue; */
+  gap: 10px;
+}
+
+.pECard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  /* height: 450px; */
+  border-radius: 10px;
+  border: 2px solid orange ;
+  padding: 20px;
+  /* padding-top: 20px; */
+  /* background-color: darkblue; */
+  gap: 10px;
+}
+
+.cardText{
+  color: #000;
+  font-family: Verdana;
+  font-size: 13x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.048px;
+  text-align: center;
+}
+
+.month{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: aquamarine; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.monthText{
+  color: #000;
+  font-family:'Lucida Sans';
+  font-size: 11x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.048px;
+  text-align: center;
+}
+
+/* .tab{
+  color: red;
+} */
+
+
+.features{
+  display: flex;
+ flex-direction: column;
+ width: 90%;
+ margin: auto;
+  gap: 10px;
+  color: #000000;
+  /* background-color: crimson; */
+}
+
+.FIcons{
+  background-color: orange;
+  width: 100%;
+  border-radius: 100px;
+  color: #FFF;
+  /* padding: 5px; */
+}
+
+.FText{
+  color: #000;
+  font-family:'Lucida Sans';
+  font-size: 11x;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.048px;
+  /* text-align: center; */
+}
+
+.feature{
+  display: grid;
+  width: 100%;
+  grid-template-columns:0.2fr 2fr ;
+  gap: 10px;
+}
+
+.btn {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0.6;
+  color: #000000;
+}
+
+.btn::after {
+  content: '';
+  border-bottom: 3px double orange;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  margin-top: -5px;
+  top: 0;
+  left: 5px;
+  visibility: hidden;
+  opacity: 1;
+  transition: .2s linear;
+ 
+}
+
+.btn .icon {
+  transform: translateX(0%);
+  transition: .2s linear;
+  animation: attention 1.2s linear infinite;
+}
+
+.btn:hover::after {
+  visibility: visible;
+  opacity: 0.9;
+  width: 90%;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.btn:hover > .icon {
+  transform: translateX(30%);
+  animation: none;
+}
+
+.custom-bullet{
+  color: red;
+}
+
+
+.p_cardERow{
+  /* background: red; */
+  width: 30%;
+  margin-top: 50px;
+}
+
+
+
+@keyframes attention {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(30%);
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+.priceCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 10px;
+  /* background-color: red; */
+  justify-content: center;
+}
+
+.pricingSwitch{
+  display: grid;
+  display: flex;
+  justify-content: center;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+   border: 2px solid orange;
+  height: 60px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 100px;
+}
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  color: white;
+  border-radius: 100px;
+  padding: 10px;
+  font-size: 12px;
+    }
+  
+    .activeTab{
+      display: flex;
+  width: 100%;
+  background-color: #fff;
+  justify-content: center;
+  color: orange;
+  border-radius: 100px;
+  padding: 10px;
+  border: 2px solid orange;
+  font-size: 12px;
+    }
+
+    .p_cardRow{
+      /* display: grid;
+      grid-template-columns: 2fr 2fr 2fr ; */
+      display: flex;
+      /* overflow: scroll; */
+      width: 100%;
+      /* background-color: goldenrod; */
+      /* flex-wrap: wrap; */
+      gap: 40px;
+      
+    }
+
+    .p_cardERow{
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pECard{
+      width: 100%;
+    }
+
+    
+}
