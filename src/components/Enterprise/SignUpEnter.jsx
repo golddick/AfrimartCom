@@ -1,7 +1,57 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import './RegisterEnter.css'
+import axios from 'axios';
+import Email from '../Email/Email';
 
 function SignUpEnter() {
+
+
+    const [formData, setFormData] = useState({
+        companyName: '',
+        sector: '',
+        businessType: '',
+        registrationNo: '',
+        businessAddress: '',
+        businessWebsite: '',
+        employees: '',
+        annualTurnover: '',
+        country: '',
+        city: '',
+        fullName: '',
+        telephone: '',
+        emailAddress: '',
+        description: '',
+      });
+    
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log('Form Data:', formData);
+        try {
+          await axios.post('http://localhost:5000/submit-form', formData);
+          alert('Form submitted successfully!');
+
+          alert(response.data.message);
+
+          // You can customize this part based on your server response
+          const emailContent = <Email formData={formData} />;
+          console.log('Email Content:', emailContent);
+    
+        }catch (error) {
+            if (error.response) {
+              console.error('Error submitting form:', error.response.data);
+            } else {
+              console.error('Error submitting form:', error.message);
+            }
+            alert('Failed to submit form. Please try again.');
+          }
+      };
+    
+
+
   return (
     <div className='SignUpEnter'>
         <div className="SignUpEnterBox">
@@ -9,43 +59,43 @@ function SignUpEnter() {
             <div className="EnterForm">
                 <div className="formInput">
                     <h3 className='formName'>Company Name</h3>
-                    <input type="text" placeholder='Company Name'className='input' />
+                    <input type="text" placeholder='Company Name'className='input' value={formData.companyName} onChange={handleChange} name='companyName'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Sector</h3>
-                    <input type="text" placeholder='Sector'className='input' />
+                    <input type="text" placeholder='Sector'className='input' value={formData.sector} onChange={handleChange} name='sector'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Business Type</h3>
-                    <input type="text" placeholder='Business Type'className='input' />
+                    <input type="text" placeholder='Business Type'className='input' value={formData.businessType} onChange={handleChange} name='businessType'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Business Registration No</h3>
-                    <input type="text" placeholder='Registration No'className='input' />
+                    <input type="text" placeholder='Registration No'className='input' value={formData.registrationNo} onChange={handleChange}  name='registrationNo'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Business Address</h3>
-                    <input type="text" placeholder='Business Address'className='input' />
+                    <input type="text" placeholder='Business Address'className='input' value={formData.businessAddress} onChange={handleChange} name='businessAddress'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Business Website</h3>
-                    <input type="text" placeholder='Business Website'className='input' />
+                    <input type="text" placeholder='Business Website'className='input' value={formData.businessWebsite} onChange={handleChange} name='businessWebsite'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>No Of Employees</h3>
-                    <input type="text" placeholder=' Employees'className='input' />
+                    <input type="text" placeholder=' Employees'className='input' value={formData.employees} onChange={handleChange} name='employees'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Annual TurnOver</h3>
-                    <input type="text" placeholder=' $100,000'className='input' />
+                    <input type="text" placeholder=' $100,000'className='input'  value={formData.annualTurnover} onChange={handleChange} name='annualTurnover'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Country Of Location</h3>
-                    <input type="text" placeholder=' Country'className='input' />
+                    <input type="text" placeholder=' Country'className='input' value={formData.country} onChange={handleChange} name='country'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>City Of Location</h3>
-                    <input type="text" placeholder='City 'className='input' />
+                    <input type="text" placeholder='City 'className='input'  value={formData.city} onChange={handleChange} name='city'/>
                 </div>
             </div>
         </div>
@@ -55,32 +105,34 @@ function SignUpEnter() {
             <div className="EnterForm">
                 <div className="formInput">
                     <h3 className='formName'>Full Name</h3>
-                    <input type="text" placeholder='Full Name'className='input' />
+                    <input type="text" placeholder='Full Name'className='input' value={formData.fullName} onChange={handleChange} name='fullName' />
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>Telephone</h3>
-                    <input type="number" placeholder='+123456789'className='input' />
+                    <input type="number" placeholder='+123456789'className='input' value={formData.telephone} onChange={handleChange}  name='telephone'/>
                 </div>
                 <div className="formInput">
                     <h3 className='formName'>E-Mail Address</h3>
-                    <input type="text" placeholder='john@gmail.com'className='input' />
+                    <input type="text" placeholder='john@gmail.com'className='input'  value={formData.emailAddress} onChange={handleChange}  name='emailAddress'/>
                 </div>
                 <div className='formInput'>
                 {/* <label htmlFor="largeTextArea">Large Text Area:</label> */}
                 <h3 className='formName'>Tell us more about your Business(optional)</h3>
                 <textarea
                     id="TextArea"
-                    name="TextArea"
+                    name="des"
                     rows="10"  
                     cols="50" 
                     placeholder="Type your text here..."
                     className='TextArea-input'
+                    value={formData.description} onChange={handleChange}
                 />
                 </div>
 
-                <button>Send</button>
+               
             </div>
         </div>
+        <button onClick={handleSubmit}>Send</button>
     </div>
   )
 }
