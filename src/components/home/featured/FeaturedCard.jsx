@@ -8,13 +8,13 @@ const FeaturedCard = () => {
       <div className='content'>
         {featured.map((items, index) => (
           <div className='featured_box' key={index}>
-            {/* <img src={items.cover} alt='' className="boxImg" /> */}
+            <img src={items.cover} alt='' className="boxImg" />
             <h4 className="BoxName">{items.name}</h4>
             <label className="BoxText">{items.total}</label>
           </div>
         ))}
       </div>
-    </>
+    </> 
   )
 }
 

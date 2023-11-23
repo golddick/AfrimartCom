@@ -1,4 +1,5 @@
-import React from 'react';
+ import React from 'react';
+
 
 function Email({ formData }) {
   return (
@@ -12,10 +13,12 @@ function Email({ formData }) {
 
       <p className="label">Sector:</p>
       {/* <p>{formData.sector}</p> */}
-      <p>sector</p>
+      <p>sector</p> 
       {/* Include other fields as needed */}
     </div>
   );
 }
 
 export default Email;
+
+

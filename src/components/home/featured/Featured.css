@@ -49,17 +49,18 @@ height: 80px;
 .featured_box{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 20px;
   gap: 20px;
   align-items: center;
   width: 400px !important;
-  height: 300px; 
+  height: 400px; 
    overflow: visible;
-   box-shadow: 0px 1px 5px 1px rgba(255,165,0,0.69);
+   /* background-color: ghostwhite; */
+   /* box-shadow: 0px 1px 5px 1px rgba(255,165,0,0.69);
    -webkit-box-shadow: 0px 1px 5px 1px rgba(255,165,0,0.69);
-   -moz-box-shadow: 0px 1px 5px 1px rgba(255,165,0,0.69);
+   -moz-box-shadow: 0px 1px 5px 1px rgba(255,165,0,0.69); */
 
 }
 
@@ -76,6 +77,7 @@ height: 80px;
   height: 50px;
   border-radius: 100%;
   align-self: center;
+  object-fit: contain;
 }
 
 .featured .box {

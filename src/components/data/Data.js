@@ -21,47 +21,47 @@ export const nav = [
   },
   {
     text: "contact",
-    path: "https://afrimart.com/en/contactus",
+    path: "/contact",
   },
 ]
 export const featured = [
   {
-    // cover: "../images/hero/problem.png",
+    cover: "../images/hero/ass.png",
     name: "Lack of Visibility and Accessibility",
     total: "Low visibility and restricted access between countries in regard to tradable products.",
   },
   {
-    // cover: "../images/hero/h2.png",
+    cover: "../images/hero/language.png",
     name: "Language Barrier",
     total: "Diverse languages and cultural differences make it challenging to reach a broad audience.",
   },
   {
-    // cover: "../images/hero/h3.png",
+    cover: "../images/hero/payment.jpeg",
     name: " Payment Deterrents",
     total: "Cross border payment poorly established, Payment failures, limited payment options, and complex checkout processes.",
   },
   {
-    // cover: "../images/hero/problem.png",
+    cover: "../images/hero/delivery.jpeg",
     name: "Poor Shipping and Logistics",
     total: "Shipping delays, high shipping costs, and poor tracking lead to customer dissatisfaction.",
   },
   {
-    // cover: "../images/hero/h2.png",
+    cover: "../images/hero/currency.webp",
     name: "Currency Barrier",
     total: "Different regions use various currencies, making intra-trading difficult.  ",
   },
   {
-    // cover: "../images/hero/h3.png",
+    cover: "../images/hero/auth.webp",
     name: " Product Authenticity",
     total: "Counterfeit products are a concern, impacting trust and safety. ",
   },
   {
-    // cover: "../images/hero/h4.png",
+    cover: "../images/hero/inven.webp",
     name: "Poor Inventory Management",
     total: "Overstocking or understocking products can lead to loss of sales or excessive storage costs.",
   },
   {
-    // cover: "../images/hero/h4.png",
+    cover: "../images/hero/security.png",
     name: "Security Concerns",
     total: " Data breaches and fraud that erode trust",
   },
@@ -69,43 +69,43 @@ export const featured = [
 
 export const success = [
   {
-    cover: "../images/hero/h2.png",
+    cover: "../images/hero/ass.png",
     name: "Visibility and Accessibility",
     total: "Afrimart grants visibility for your business as well as making it accessible to buyers looking to purchase your products across Africa and beyond.",
   },
   {
-    cover: "../images/hero/h2.png",
+    cover: "../images/hero/language.png",
     name: "Multilingual Platform",
     total: "The Afrimart platform is a multilingual platform that allows you to select from your preferred language choice which means you are not restricted to only one language and can reach a wide span of audience.",
   },
   {
-    cover: "../images/hero/h3.png",
+    cover: "../images/hero/payment.jpeg",
     name: " Easy, Fast and Secured Payment ",
     total: " Afrimart has partnered with Papss to tackle cross-border payment issues and also offers multiple payment methods, simplify checkout, and address payment processing issues promptly, the platform is also designed with top notch security to ensure that all payment transactions are secured and safe. We also offer buyers the security of paying suppliers through an escrow system provided by our internal escrow engine as well as some globally recognized escrow service provider.",
   },
   {
-    cover: "../images/hero/h4.png",
+    cover: "../images/hero/auth.webp",
     name: "Product Authenticity",
     total: "We provide third-party verification of product quality and accuracy services to ensure that products meet the expected quality standards before they are shipped to customers. This reduces the risk of receiving defective or subpar items. One of our primary objectives of inspections is meeting customer requirements and preventing defective products from being distributed.  ",
   },
   {
-    cover: "../images/hero/h3.png",
+    cover: "../images/hero/delivery.jpeg",
     name: "Premium Shipping and Logistics",
     total: "Afrimart has Partnered with reliable logistics companies thereby offering multiple shipping options, and providing accurate shipment tracking.    ",
   },
   {
-    cover: "../images/hero/h4.png",
+    cover: "../images/hero/currency.webp",
     name: "Multiple Currency Options",
     total: " Afrimart Implements a multi-currency feature that allows users to select their preferred currency and it automatically updates prices based on the chosen currency. ",
   },
 
   {
-    cover: "../images/hero/problem.png",
+    cover: "../images/hero/inven.webp",
     name: "Excellent Inventory Management",
     total: "Afrimart Implements Inventory management software to track and optimize stock levels in real-time. ",
   },
   {
-    cover: "../images/hero/problem.png",
+    cover: "../images/hero/security.png",
     name: " Top Notch Security",
     total: "Afrimart Implement robust security measures, including encryption, secure payment gateways, and regular security audits.",
   },

@@ -7,7 +7,7 @@ const FeaturedCard = () => {
       <div className='content'>
         {success.map((items, index) => (
           <div className='featured_box' key={index}>
-            {/* <img src={items.cover} alt='' className="boxImg" /> */}
+            <img src={items.cover} alt='' className="boxImg" />
             <h4 className="BoxName">{items.name}</h4>
             <label className="Box-Text">{items.total}</label>
           </div>

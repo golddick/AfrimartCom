@@ -29,7 +29,7 @@ const PriceCard = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
+ 
 
 
 
@@ -280,15 +280,16 @@ const PriceCard = () => {
         <h2 className="cardHeader"> An Enterprise operator is an
                  organization that provides a platform 
                  for multiple merchants/vendors to list 
-                 and market their individual product within 
+                 and market their individual product(s) within 
                  a specified e-commerce website.This type of 
                  service allows the operator to host multiple
-                  merchants/vendors and their products.</h2>
+                  merchants/vendors and their product(s).</h2>
 
               <div className="pricingCards">
                 <div className="p_cardERow">
                   <div className="pECard">
                   <h2 className="cardText">Features</h2>
+                  <h6 className="cardSubText">please contact us for your customized pricing model</h6>
                     <div className="features">
                  <div className="feature">
                  <BsCheckAll className="FIcons"/>
@@ -350,9 +351,9 @@ const PriceCard = () => {
 
                     </div>
                     <button class="btn" onClick={handleProceedClick}>
-                    Proceed
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px" class="icon">
-                  <path strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1.5" stroke="white" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+                    Contact
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="20px" width="20px" class="icon">
+                  <path strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1.5" stroke="orange" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
                   </svg>
                   </button>
                   {/* <div className="cl"  onClick={handleProceedClick}>click</div> */}

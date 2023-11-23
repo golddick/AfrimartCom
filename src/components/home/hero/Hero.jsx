@@ -4,7 +4,7 @@ import "./hero.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import img1 from '../../../Assest /header1.jpg'
-import img2 from '../../../Assest /header2.jpg'
+import img2 from '../../../Assest /head.jpg'
 import img3 from '../../../Assest /header3.jpg'
 import '../../../../node_modules/swiper/swiper-bundle.css'
 import '../../../../node_modules/swiper/swiper-bundle.min.css'

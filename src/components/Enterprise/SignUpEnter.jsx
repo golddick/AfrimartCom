@@ -2,6 +2,8 @@ import React ,{useState}from 'react'
 import './RegisterEnter.css'
 import axios from 'axios';
 import Email from '../Email/Email';
+import html2pdf from 'html2pdf.js';
+
 
 function SignUpEnter() {
 
@@ -34,11 +36,15 @@ function SignUpEnter() {
           await axios.post('http://localhost:5000/submit-form', formData);
           alert('Form submitted successfully!');
 
-          alert(response.data.message);
+        //   alert(response.data.message);
 
           // You can customize this part based on your server response
-          const emailContent = <Email formData={formData} />;
-          console.log('Email Content:', emailContent);
+        //   const emailContent = <Email formData={formData} />;
+        //   console.log('Email Content:', emailContent);
+
+          // Convert form data to a downloadable PDF
+    //   convertToPDF(formData);
+
     
         }catch (error) {
             if (error.response) {
@@ -49,6 +55,52 @@ function SignUpEnter() {
             alert('Failed to submit form. Please try again.');
           }
       };
+    
+
+    //   const convertToPDF = (formData) => {
+       
+    //     console.log('Converting to PDF...');
+    //     const content = generatePDFContent(formData);
+      
+    //     const filename = formData.companyName ? `${formData.companyName}data.pdf` : 'Enterprise-data.pdf';
+    //     console.log('Filename:', filename);
+    //     // Convert HTML content to PDF
+    //     const pdfOptions = {
+    //       margin: 10,
+    //       filename: filename,
+    //       image: { type: 'jpeg', quality: 0.98 },
+    //       html2canvas: { scale: 2 },
+    //       jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    //     };
+    //     if (!formData.companyName) {
+    //         alert('Company name is missing. Unable to generate PDF.');
+    //         return;
+    //       }
+        
+    //     html2pdf().from(content).set(pdfOptions).outputPdf((pdf) => {
+    //       // Trigger a download of the PDF
+    //       const blob = new Blob([pdf], { type: 'application/pdf' });
+    //       const link = document.createElement('a');
+    //       link.href = window.URL.createObjectURL(blob);
+    //       link.download = pdfOptions.filename;
+    //       link.click();
+
+    //       console.log('Generated PDF:', pdf);
+
+    //     });
+    //   };
+    
+    //   const generatePDFContent = (formData) => {
+    //     // Generate HTML content for the PDF
+    //     return `
+    //       <div>
+    //         <h1>Form Data</h1>
+    //         <p>Company Name: ${formData.companyName}</p>
+    //         <p>Sector: ${formData.sector}</p>
+    //         <!-- Add other form fields as needed -->
+    //       </div>
+    //     `;
+    //   };
     
 
 
@@ -120,7 +172,7 @@ function SignUpEnter() {
                 <h3 className='formName'>Tell us more about your Business(optional)</h3>
                 <textarea
                     id="TextArea"
-                    name="des"
+                    name="description"
                     rows="10"  
                     cols="50" 
                     placeholder="Type your text here..."
@@ -131,8 +183,9 @@ function SignUpEnter() {
 
                
             </div>
+            <button onClick={handleSubmit}>Send</button>
         </div>
-        <button onClick={handleSubmit}>Send</button>
+       
     </div>
   )
 }
