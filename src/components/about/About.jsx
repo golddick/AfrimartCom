@@ -2,6 +2,8 @@ import React from "react"
 import Back from "../common/Back"
 import Heading from "../common/Heading"
 import img from "../images/about.jpg"
+import AboutImg from '../../Assest /03.jpg'
+import AboutImg2 from '../../Assest /04.jpg'
 import "./about.css"
 
 const About = () => {
@@ -12,19 +14,19 @@ const About = () => {
         <div className='container flex mtop'>
           <div className='left row'>
             <Heading title='What is Afrimart' subtitle='Afrimart is Africa’s first pan-continental ecommerce trading ecosystem with Software-as-a-Service provision' />
-
+ 
             <p>Afrimart is Africa’s first pan-continental online (B2B/B2C) ecommerce trading ecosystem that enables organizations to have their own branded and operated B2B/B2C ecommerce trading sites, while also benefitting from being part of an aggregated and interoperable pan-African global common marketplace. This gives organizations, their customers, as well as their products much higher global visibility, as well as having the benefits of more cost-effective shared services.</p>
             <p>​Afrimart therefore provides the platform to empower organizations and their members’ businesses with all the tools they need to manage, trade, and deliver their products and services to an African and global market. The Afrimart ecosystem operates on an interoperable Software as a Service (SaaS) model. </p>
             {/* <button className='btn2'>More About Us</button> */}
           </div>
           <div className='right row'>
-            <img src='./immio.jpg' alt='' />
+            <img src={AboutImg} alt='' />
           </div>
         </div>
         <div className='container flex mtop' >
-        <div className='left row' style={{marginRight:'100px'}}>
-            <img src='./immio.jpg' alt='' />
-          </div>
+        {/* <div className='left row' style={{marginRight:'100px'}}>
+          <img src={AboutImg2} alt='' />
+          </div> */}
           <div className='right row'>
             <Heading title='Afrimart Genesis' subtitle='Afrimart is built on the success of ITEX Integrated Services Limited, a payment solution company with multiple payment products and over 150,000 merchants​' />
 

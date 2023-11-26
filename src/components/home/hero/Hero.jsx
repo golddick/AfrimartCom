@@ -27,16 +27,16 @@ const Hero = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
+        pagination={{  
+          clickable: true, 
           
-        }}
+        }} 
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-         <SwiperSlide  style={{ background:`url(${img1})`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' , width:'100%',height:'90vh'}}>
-        <div className='container'>
+         <SwiperSlide  style={{ background:`url(${img1})`, backgroundSize: 'cover'}} className='swipercard'>
+        <div className='header-container'>
           <div className="headerText">
             <h3 className="Header-text">
             Leverage the Power of The Pan-African <br/>E-Commerce Ecosystem
@@ -49,8 +49,8 @@ const Hero = () => {
         </div>
         </SwiperSlide>
 
-        <SwiperSlide style={{ background:`url(${img2})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' , width:'100%', height:'90vh'}}>
-        <div className='container'>
+        <SwiperSlide style={{ background:`url(${img2})`, backgroundSize: 'cover'}} className='swipercard'>
+        <div className='header-container'>
           {/* <Heading title='' subtitle='' /> */}
           <div className="headerText">
             <h3 className="Header-text">
@@ -63,8 +63,8 @@ const Hero = () => {
         </div>
         </SwiperSlide>
 
-        <SwiperSlide style={{ background: `url(${img3})`, backgroundSize: 'cover' ,backgroundRepeat: 'no-repeat' , width:'100%',height:'90vh'}}>
-        <div className='container'>
+        <SwiperSlide style={{ background: `url(${img3})`, backgroundSize: 'cover'}} className='swipercard'>
+        <div className='header-container'>
           {/* <Heading title='' subtitle='' /> */}
           <div className="headerText">
             <h3 className="Header-text">

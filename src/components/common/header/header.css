@@ -62,7 +62,7 @@ header .toggle {
 @media (min-width: 760px) and (max-width: 1200px){
   header {
     background-color: #FFF;
-    height: 10vh;
+    height: 13vh;
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
     padding: 0;
     margin: 0;
@@ -137,6 +137,7 @@ header .toggle {
   header {
     padding: 0;
     z-index: 99999;
+    height: 100%;
 
   }
   .headerBox{
@@ -146,7 +147,7 @@ header .toggle {
     width: 100%;
   }
   header img {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   header .button {
     display: none;

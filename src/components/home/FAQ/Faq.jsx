@@ -19,7 +19,7 @@ function Faq() {
         setOpenAns3(!openAns3)
     }
     const handleOpenAns4 =() =>{
-        setOpenAns4(!openAns4)
+        setOpenAns4(!openAns4) 
     }
   return (
     <div className='Faq padding'>
@@ -35,8 +35,8 @@ function Faq() {
                 openAns && (
                     <div>
                         <ul  className="faqAnsBody">
-                            <li><BiSolidRightArrowAlt/> Afrimart is Africa’s first intra-continental online business-to-business trade platform.</li>
-                            <li><BiSolidRightArrowAlt/>This platform is designed to create new business opportunities for African SMEs and general merchants on the quest for growth and expansion by creating visibility and accessibility to African buyers and suppliers</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> Afrimart is Africa’s first intra-continental online business-to-business trade platform.</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/>This platform is designed to create new business opportunities for African SMEs and general merchants on the quest for growth and expansion by creating visibility and accessibility to African buyers and suppliers</li>
                            
                         </ul>
                     </div>
@@ -55,16 +55,16 @@ function Faq() {
                  
                     <div>
                         <ul  className="faqAnsBody">
-                            <li><BiSolidRightArrowAlt/> Visibility and accessibility to African buyers and suppliers</li>
-                            <li><BiSolidRightArrowAlt/> Free membership for a year</li>
-                            <li><BiSolidRightArrowAlt/> Payment security</li>
-                            <li><BiSolidRightArrowAlt/> Supplier verification</li>
-                            <li><BiSolidRightArrowAlt/> Network of logistics partners</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> Visibility and accessibility to African buyers and suppliers</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> Free membership for a year</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> Payment security</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> Supplier verification</li>
+                            {/* <li><BiSolidRightArrowAlt/> Network of logistics partners</li>
                             <li><BiSolidRightArrowAlt/> Location based lead generation</li>
                             <li><BiSolidRightArrowAlt/> Ecosystem of payment partners (Afrexim & other payment companies)</li>
                             <li><BiSolidRightArrowAlt/> Business tools for sellers: analytics, inventory management, selling tips, etc.</li>
                             <li><BiSolidRightArrowAlt/> Multilingual platform</li>
-                            <li><BiSolidRightArrowAlt/> Growth and scale opportunity for African manufacturing industries.</li>
+                            <li><BiSolidRightArrowAlt/> Growth and scale opportunity for African manufacturing industries.</li> */}
                         </ul>
                     </div>
                 )
@@ -81,8 +81,8 @@ function Faq() {
                 openAns3 && (
                 <div >
                         <ul className="faqAnsBody">
-                            <li><BiSolidRightArrowAlt/> yes.</li>
-                            <li><BiSolidRightArrowAlt/>yes</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/> yes.</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/>yes</li>
                            
                         </ul>
                 </div>
@@ -100,7 +100,7 @@ function Faq() {
                 openAns4 && (
                 <div>
                         <ul  className="faqAnsBody">
-                            <li><BiSolidRightArrowAlt/>No, Afrimart is neither a supplier nor a buyer.</li>
+                            <li className='ansList'><BiSolidRightArrowAlt className='ansIcon'/>No, Afrimart is neither a supplier nor a buyer.</li>
                         </ul>
                 </div>
                 )

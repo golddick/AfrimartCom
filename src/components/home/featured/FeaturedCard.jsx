@@ -14,7 +14,7 @@ const FeaturedCard = () => {
           </div>
         ))}
       </div>
-    </> 
+    </>  
   )
 }
 

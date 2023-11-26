@@ -94,6 +94,24 @@ height: 80px;
   margin: auto;
 }
 
+@media screen and (max-width: 1200px){
+.content{
+  /* background-color: blue; */
+  display: flex;
+
+}
+.featured_box{
+  /* background: gold; */
+  height: 100%;
+  width: 300px !important;
+  margin: auto;
+}
+.BoxName{
+font-size: 15px;
+}
+}
+
+
 @media screen and (max-width: 760px){
   .featured_box{
     width: 100% !important;

@@ -19,7 +19,7 @@ const Header = () => {
       console.log(`Navigate to: ${path}`);
       // history.push(path);
       window.location.href = path;
-    }
+    } 
   };
   const isExternalLink = (url) => {
     return url.startsWith("http") || url.startsWith("www");
@@ -53,7 +53,7 @@ const Header = () => {
             <i className="login"></i> Sign In
             </button>
           </a>
-            
+             
             <a href="https://afrimart.com/en/users/registration" target="_blank" rel="noopener noreferrer">
             <button className='btn1'>
               <i className='fa fa-sign-out'></i> Sign Up

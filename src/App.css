@@ -156,12 +156,30 @@ img {
   padding: 120px 0;
 }
 .back h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 .mb {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 1200px){
+  h4{
+    font-size: 15px;
+  }
+
+  .heading h1{
+    font-size: 30px;
+  }
+
+  .heading p {
+    font-size: 15px;
+  }
+  .back h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .grid4,
   .grid3,
@@ -178,5 +196,20 @@ img {
   .back img,
   .back {
     height: 30vh;
+  }
+  .back h1 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  h4{
+    font-size: 15px;
+  }
+
+  .heading h1{
+    font-size: 30px;
+  }
+
+  .heading p {
+    font-size: 15px;
   }
 }

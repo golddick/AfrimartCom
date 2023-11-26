@@ -13,5 +13,5 @@ const Back = ({ name, title, cover }) => {
     </>
   )
 }
-
+ 
 export default Back
