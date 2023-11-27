@@ -62,6 +62,11 @@ footer ul li {
   color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.GD{
+  color: gold;
+  font-size: 8px;
+}
 @media screen and (max-width: 800px) {
   footer .container {
     grid-template-columns: repeat(2, 1fr);

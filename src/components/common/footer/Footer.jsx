@@ -1,11 +1,12 @@
 import React from "react"
+import { SiGoldenline } from "react-icons/si";
 import { footer } from "../../data/Data"
 import "./footer.css"
 
 const Footer = () => {
   return (
     <>
-    
+     
 
       <footer>
         <div className='container'>
@@ -35,7 +36,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2021 Afrimart. GD.</span>
+        <span>© 2023 Afrimart.    <SiGoldenline className="GD"/></span>
       </div>
     </>
   )

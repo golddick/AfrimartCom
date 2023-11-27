@@ -386,9 +386,13 @@ export const footer = [
   {
     title: "LAYOUTS",
     text: [{ list: "Home" }, { list: "About" }, { list: "FAQ" }],
+    // {
+    //   text: "home",
+    //   path: "/",
+    // },
   },
   {
     title: "PARTNERS",
-    text: [ { list: "GIG" }, { list: "ITEX" }, ],
+    text: [ { list: "MOROFIN" }, { list: "ITEX" },{ list: "TABS" }, { list: "Nahco Aviance" }, { list: "AFREXIMBANK" }, { list: "Group NICERT" },   { list: "IATF" },],
   },
 ]
