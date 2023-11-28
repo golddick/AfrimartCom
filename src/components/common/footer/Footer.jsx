@@ -1,5 +1,7 @@
 import React from "react"
-import { SiGoldenline } from "react-icons/si";
+import { SiGoldenline, SiInstagram } from "react-icons/si";
+import {MdLocalPhone, MdFacebook} from 'react-icons/md'
+import{TiMail} from 'react-icons/ti'
 import { footer } from "../../data/Data"
 import "./footer.css"
 
@@ -9,7 +11,7 @@ const Footer = () => {
      
 
       <footer>
-        <div className='container'>
+        <div className='Footercontainer'>
           <div className='box'>
             <div className='logo'>
               {/* <img src='../images/logo-light.png' alt='' /> */}
@@ -23,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {footer.map((val) => (
+          {/* {footer.map((val) => (
             <div className='box'>
               <h3>{val.title}</h3>
               <ul>
@@ -32,7 +34,79 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
+          <div className="Footer-box">
+         <div className="PARTNERS">
+         <h3 className="footerHeader">Layouts</h3>
+          <ul className="FList">
+          
+            <li className="listText"><a href="/"> Home</a></li>
+            <li className="listText"><a href="/about"> About Us</a></li>
+            <li className="listText"><a href="/faq"> FAQ</a></li>
+            <li className="listText"><a href="/pricing"> Pricing</a></li>
+            <li className="listText"><a href="/contact"> Contact</a></li>
+          </ul>
+
+         </div>
+         <div className="PARTNERS">
+         <h3 className="footerHeader">PARTNERS</h3>
+         <div className="FList">
+            <div className="listText">Itex</div>
+            <div className="listText"> Moro Fin</div>
+            <div className="listText">TABS</div>
+            <div className="listText"> Nahco aviance</div>
+            <div className="listText">Afrexim Bank</div>
+            <div className="listText">Group NICERT</div>
+            <div className="listText">IATF</div>
+          </div>
+         </div>
+         <div className="PARTNERS">
+         <h3 className="footerHeader">Contact</h3>
+         <div className="FList">
+            <div className="listBox">
+              <TiMail className="listImg"/> 
+              <div className="listText">afrimart@gmail.com</div>
+            </div>
+            <div className="listBox">
+              <MdLocalPhone className="listImg"/> 
+              <div className="listText">090883838221</div>
+            </div>
+            <div className="listBox">
+              <MdFacebook className="listImg"/> 
+              <div className="listText">@afrimart</div>
+            </div>
+            <div className="listBox">
+              <SiInstagram className="listImg"/> 
+              <div className="listText">@afrimart</div>
+            </div>
+          </div>
+         </div>
+          </div>
+          
+          {/* <div className="Footer-Cbox">
+         <div className="PARTNERS">
+         <h3 className="footerHeader">Contact</h3>
+         <div className="FList">
+            <div className="listBox">
+              <TiMail className="listImg"/> 
+              <div className="listText">afrimart@gmail.com</div>
+            </div>
+            <div className="listBox">
+              <MdLocalPhone className="listImg"/> 
+              <div className="listText">090883838221</div>
+            </div>
+            <div className="listBox">
+              <MdFacebook className="listImg"/> 
+              <div className="listText">@afrimart</div>
+            </div>
+            <div className="listBox">
+              <SiInstagram className="listImg"/> 
+              <div className="listText">@afrimart</div>
+            </div>
+          </div>
+         </div>
+          </div> */}
+
         </div>
       </footer>
       <div className='legal'>

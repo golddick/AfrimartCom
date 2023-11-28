@@ -17,7 +17,7 @@ const Home = () => {
       {/* <Awards /> */}
       {/* <Location />
       <Team /> */}
-      <DomainSearch/>
+      {/* <DomainSearch/> */}
       <Price />
       <FAQ/>
     </>

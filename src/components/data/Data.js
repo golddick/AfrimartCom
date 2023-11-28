@@ -385,7 +385,7 @@ export const price = [
 export const footer = [
   {
     title: "LAYOUTS",
-    text: [{ list: "Home" }, { list: "About" }, { list: "FAQ" }],
+    text: [{ list: "Home" }, { list: "About" }, { list: "FAQ" },  { list: "Pricing" }, { list: "Contact" }],
     // {
     //   text: "home",
     //   path: "/",

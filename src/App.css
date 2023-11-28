@@ -20,7 +20,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
 }
 ul {
@@ -195,11 +195,12 @@ img {
   .back::after,
   .back img,
   .back {
-    height: 30vh;
+    height: 200px;
   }
   .back h1 {
     font-size: 15px;
     font-weight: 400;
+   
   }
   h4{
     font-size: 15px;

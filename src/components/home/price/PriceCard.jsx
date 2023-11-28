@@ -95,6 +95,11 @@ const PriceCard = () => {
                   640: {
                     slidesPerView: 2,
                     spaceBetween: 40
+                  },
+                  // when window width is >= 1000px
+                  1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
                   }
                 }}
                 className="p_cardRow"
@@ -280,7 +285,7 @@ const PriceCard = () => {
         <h2 className="cardHeader"> The Enterprise operator facilitates 
         a platform where multiple merchants can showcase and 
         sell their product(s) on a unified e-commerce website. 
-        For personalized pricing, <i>please contact us for your customized pricing model</i>.</h2>
+        For personalized pricing,<br/> <i>please contact us for your customized pricing model</i>.</h2>
         {/* <h2 className="cardHeader"> An Enterprise operator is an
                  organization that provides a platform 
                  for multiple merchants/vendors to list 
