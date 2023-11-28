@@ -27,7 +27,8 @@ backdrop-filter: blur(10px); /* Adjust the value to control the blur intensity *
 background-color: rgba(0, 0, 0, 0.442);
 border-radius: 10px;
 padding: 20px;
-height: 30%;
+/* height: 30%; */
+width: 90%;
 margin: auto;
 
 }
@@ -93,11 +94,11 @@ margin: auto;
   height: 500px;
   
 }
-.headerText{
+/* .headerText{
   height: 40%;
   width: 80%;
   margin: auto;
-}
+} */
 .Header-text{
 font-size: 30px;
 }
@@ -121,9 +122,9 @@ font-size: 30px;
     width: 100%;
   }
 
-  .headerText{
+  /* .headerText{
     height: 55%;
-  }
+  } */
   .Header-text{
     font-size: 25px;
   }
