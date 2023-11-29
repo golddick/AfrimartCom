@@ -2,6 +2,7 @@ import React from "react"
 import { SiGoldenline, SiInstagram } from "react-icons/si";
 import {MdLocalPhone, MdFacebook} from 'react-icons/md'
 import{TiMail} from 'react-icons/ti'
+import { FaXTwitter } from "react-icons/fa6";
 import { footer } from "../../data/Data"
 import "./footer.css"
 
@@ -67,18 +68,34 @@ const Footer = () => {
               <TiMail className="listImg"/> 
               <div className="listText">afrimart@gmail.com</div>
             </div>
-            <div className="listBox">
+            {/* <div className="listBox">
               <MdLocalPhone className="listImg"/> 
               <div className="listText">090883838221</div>
+            </div> */}
+          
+          <a href="https://x.com/afrimarttrade?s=21&t=RHNPzl8_mbD_DdBJ-IF9Qg" target="_blank" rel="noopener noreferrer">
+              <div className="listBox">
+              <FaXTwitter className="listImg"/> 
+              <div className="listText">AfrimartTrade</div>
             </div>
-            <div className="listBox">
+              </a>
+        
+
+              <a href="https://www.facebook.com/AfrimartTrade?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+              <div className="listBox">
               <MdFacebook className="listImg"/> 
-              <div className="listText">@afrimart</div>
+              <div className="listText">AfrimartTrade</div>
             </div>
-            <div className="listBox">
+              </a>
+        
+
+            <a href="https://instagram.com/afrimarttrade?igshid=MzMyNGUyNmU2YQ==" target="_blank" rel="noopener noreferrer">
+              <div className="listBox">
               <SiInstagram className="listImg"/> 
-              <div className="listText">@afrimart</div>
+              <div className="listText">Afrimarttrade</div>
             </div>
+              </a>
+        
           </div>
          </div>
           </div>
