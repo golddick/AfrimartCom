@@ -59,11 +59,7 @@ margin: auto;
   background: green;
 }
 
-/* Style for active pagination bullet (red color) */
-.swiper-pagination-bullet-active {
-  background: red;
-  
-}
+
 
 .swipercard{
   background-repeat: 'no-repeat';
@@ -110,6 +106,7 @@ font-size: 30px;
 @media screen and (max-width: 800px) {
   .hero .container {
     padding-top: 30%;
+    width: 100%;
   }
   form {
     display: flex;
@@ -127,5 +124,26 @@ font-size: 30px;
   } */
   .Header-text{
     font-size: 25px;
+  }
+  .logoimg{
+    /* background-color: red; */
+   left: 0;
+   margin-left: -10px;
+   
+  }
+  .Imglogo{
+    /* background-color: blueviolet; */
+    height: 100%;
+    position: relative;
+    /* margin-top: -5px; */
+  }
+
+  .headerBox{
+    /* background-color: yellow; */
+    position: relative;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+;
   }
 }

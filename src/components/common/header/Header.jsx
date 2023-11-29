@@ -30,9 +30,9 @@ const Header = () => {
     <>
       <header>
         <div className='container flex headerBox'>
-          <div className='logo'>
+          <div className='Imglogo'>
             <NavLink to='/'>
-            <img src={Logo} alt='' />
+            <img src={Logo} alt='' className="logoimg" />
             </NavLink>
           </div>
           <div className='nav'>
