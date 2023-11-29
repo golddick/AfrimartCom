@@ -64,10 +64,16 @@ const Footer = () => {
          <div className="PARTNERS">
          <h3 className="footerHeader">Contact</h3>
          <div className="FList">
-            <div className="listBox">
+         <a href="mailto:info@afrimart.biz" target="_blank" rel="noopener noreferrer">
+              <div className="listBox">
+              <TiMail className="listImg"/> 
+              <div className="listText">Afrimart.biz</div>
+            </div>
+              </a>
+            {/* <div className="listBox">
               <TiMail className="listImg"/> 
               <div className="listText">afrimart@gmail.com</div>
-            </div>
+            </div> */}
             {/* <div className="listBox">
               <MdLocalPhone className="listImg"/> 
               <div className="listText">090883838221</div>
