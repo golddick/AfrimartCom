@@ -73,7 +73,7 @@ const PriceCard = () => {
 
               {/* <div className="pricingCards"> */}
                 <div className="p_cardRow">
-
+ 
                 <>
                 <Swiper
                   pagination={{

@@ -2,7 +2,7 @@ import React ,{useState}from 'react'
 import './RegisterEnter.css'
 import axios from 'axios';
 import Email from '../Email/Email';
-import html2pdf from 'html2pdf.js';
+
 
 
 function SignUpEnter() {

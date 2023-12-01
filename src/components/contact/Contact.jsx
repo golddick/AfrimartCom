@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import axios from 'axios';
-import img from "../images/pricing.jpg"
+import img from "../../Assest /backimg2.jpg"
 import Back from "../common/Back"
 import "./contact.css"
 

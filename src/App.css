@@ -102,6 +102,7 @@ img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+
 }
 .btn2 {
   border-radius: 50px;
@@ -139,7 +140,7 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  object-fit: cover;
+  object-fit: contain;
 }
 .back::after {
   content: "";
@@ -152,7 +153,7 @@ img {
   z-index: -1;
 }
 .back .container {
-  color: #fff;
+  color: orange;
   padding: 120px 0;
 }
 .back h1 {

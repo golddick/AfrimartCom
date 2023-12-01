@@ -95,7 +95,7 @@ footer ul li {
 .FList{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   /* background-color: greenyellow; */
   color: white;
 }
@@ -114,11 +114,12 @@ color: white !important;
   display: grid;
   grid-template-columns: 0.2fr 5fr;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  /* align-items: flex-start; */
   justify-content: flex-start;
   height: 100%;
   width: 100%;
-  gap: 5px;
+  gap: 10px;
   /* background-color: aquamarine; */
 }
 .listImg{

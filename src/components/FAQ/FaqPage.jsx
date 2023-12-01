@@ -3,7 +3,7 @@ import { IoMdAdd } from "react-icons/io";
 import {BiSolidRightArrowAlt} from 'react-icons/bi'
 import Heading from '../common/Heading'
 import Back from '../common/Back'
-import Img from '../images/pricing.jpg'
+import Img from "../../Assest /backimg2.jpg"
 import '../home/FAQ/style.css'
 
 function FaqPage() {

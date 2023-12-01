@@ -1,7 +1,7 @@
 import React from "react"
 import Back from "../common/Back"
 import Heading from "../common/Heading"
-import img from "../images/about.jpg"
+import img from "../../Assest /backimg2.jpg"
 import AboutImg from '../../Assest /03.jpg'
 import AboutImg2 from '../../Assest /04.jpg'
 import "./about.css"

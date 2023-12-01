@@ -67,7 +67,7 @@ const Footer = () => {
          <a href="mailto:info@afrimart.biz" target="_blank" rel="noopener noreferrer">
               <div className="listBox">
               <TiMail className="listImg"/> 
-              <div className="listText">Afrimart.biz</div>
+              <div className="listText">Info@afrimart.biz</div>
             </div>
               </a>
             {/* <div className="listBox">
