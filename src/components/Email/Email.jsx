@@ -1,7 +1,7 @@
  import React from 'react';
 
 
-function Email({ formData }) {
+function Email() {
   return (
     <div className='Email'>
       <h1>Email from Enterprise Form</h1>

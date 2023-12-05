@@ -53,7 +53,7 @@ const Contact = () => {
               <input type='text' placeholder='Name' value={formData.cname} onChange={handleChange} name='cname' />
               <input type='text' placeholder='Email' value={formData.email} onChange={handleChange} name='email'/>
             </div>
-            <input type='text' placeholder='Subject' value={formData.subject} onChange={handleChange} name='subject'/>
+            <input type='text' placeholder='Purpose' value={formData.subject} onChange={handleChange} name='subject'/>
           <div className="decrip">
           <label htmlFor="description">Description</label>
             <textarea cols='30' rows='10' id="description" name="des" value={formData.des} onChange={handleChange} ></textarea>
