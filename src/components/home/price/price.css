@@ -23,8 +23,8 @@
     grid-template-columns: 2fr 2fr;
     align-items: center;
     gap: 20px;
-    background-color: rgba(198, 162, 96, 0.297);
-     /* border: 2px solid orange; */
+    background-color: transparent;
+   border: 2px solid orange;
     height: 70px;
     padding: 20px;
     width: 30%;
@@ -35,8 +35,8 @@
 display: flex;
 justify-content: center;
 width: 100%;
-background-color: orange;
-color: white;
+background-color: transparent;
+color: orange;
 border-radius: 100px;
 padding: 10px;
 font-size: 14px;
@@ -45,9 +45,9 @@ font-size: 14px;
   .activeTab{
     display: flex;
 width: 100%;
-background-color: #fff;
+background-color: orange;
 justify-content: center;
-color: orange;
+color: white;
 border-radius: 100px;
 padding: 10px;
 border: 2px solid orange;

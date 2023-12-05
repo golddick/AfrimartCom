@@ -3,6 +3,7 @@ import axios from 'axios';
 import img from "../../Assest /backimg2.jpg"
 import Back from "../common/Back"
 import "./contact.css"
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
@@ -21,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
     console.log('Form Data:', formData);
     try {
-      await axios.post('http://localhost:5000/submit-contact-form', formData);
+      await axios.post('https://afrimartapi.onrender.com/submit-contact-form', formData);
       alert('Form submitted successfully!');
 
       // alert(response.data.message);
@@ -39,7 +40,6 @@ const Contact = () => {
         alert('Failed to submit form. Please try again.');
       }
   };
-
 
 
   return (
@@ -60,6 +60,8 @@ const Contact = () => {
           </div>
             <button onClick={handleSubmit}>Submit Request</button>
           </form>
+
+
         </div>
       </section>
     </>

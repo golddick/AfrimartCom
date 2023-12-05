@@ -33,7 +33,7 @@ function SignUpEnter() {
         e.preventDefault();
         console.log('Form Data:', formData);
         try {
-          await axios.post('http://localhost:5000/submit-form', formData);
+          await axios.post('https://afrimartapi.onrender.com/submit-form', formData);
           alert('Form submitted successfully!');
 
         //   alert(response.data.message);
