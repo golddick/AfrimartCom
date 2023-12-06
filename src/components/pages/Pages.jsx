@@ -11,6 +11,7 @@ import Contact from "../contact/Contact"
 import SignUpEnter from "../Enterprise/SignUpEnter"
 import Email from "../Email/Email"
 
+
 const Pages = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const Pages = () => {
           <Route exact path='/faq' component={FaqPage} />  
           <Route exact path='/Form' component={SignUpEnter} />
           <Route exact path='/Email' component={Email} />
+
 
         </Switch>
         <Footer />

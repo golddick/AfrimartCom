@@ -57,6 +57,9 @@ width: 100%;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.048px;
+
+    display: flex;
+    align-items: center;
     /* text-align: center; */
 }
 
@@ -73,6 +76,18 @@ width: 100%;
     border: 2px solid #000 ;
     border-radius: 10px;
     padding: 20px;
+}
+
+.dropInput{
+    height: 100% !important;
+}
+.annualTurnover{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #000 ;
+    border-radius: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 
