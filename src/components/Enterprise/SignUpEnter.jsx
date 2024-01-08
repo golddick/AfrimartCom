@@ -10,16 +10,6 @@ function SignUpEnter() {
 // console.log(Country.getAllCountries())
 // console.log(State.getAllCities())
 
-// const allCountries = Country.getAllCountries();
-
-// allCountries.forEach(country => {
-//   const allStates = State.getStatesOfCountry(country.isoCode);
-
-//   allStates.forEach(state => {
-//     const cities = City.getCitiesOfState(state.isoCode);
-//     console.log(`Cities in ${state.name}, ${country.name}:`, cities);
-//   });
-// });
 const countries = Country.getAllCountries();
 
     const TurnOver = [
@@ -72,7 +62,7 @@ const countries = Country.getAllCountries();
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form Data:', formData);
+        // console.log('Form Data:', formData);
         try {
           await axios.post('https://afrimartapi.onrender.com/submit-form', formData);
           alert('Form submitted successfully!');
@@ -137,10 +127,10 @@ const countries = Country.getAllCountries();
   return (
     <div className='SignUpEnter'>
         <div className="SignUpEnterBox">
-            <h3 className='boxHeader'>Business Details *</h3>
+            <h3 className='boxHeader'>Business Details </h3>
             <div className="EnterForm">
                 <div className="formInput">
-                    <h3 className='formName'>Company Name</h3>
+                    <h3 className='formName'>Company Name *</h3>
                     <input type="text" placeholder='Company Name'className='input' value={formData.companyName} onChange={handleChange} name='companyName' required/>
                 </div>
                 <div className="formInput">
@@ -249,7 +239,7 @@ const countries = Country.getAllCountries();
                     <input type="text" placeholder='john@gmail.com'className='input'  value={formData.emailAddress} onChange={handleChange}  name='emailAddress' required/>
                 </div>
                 <div className="formInput">
-                    <h3 className='formName'>How did you hear of AFRIMART</h3>
+                    <h3 className='formName'>How did you hear of AFRIMART?</h3>
                     <select
                     className='annualTurnover'
                     value={formData.about}
